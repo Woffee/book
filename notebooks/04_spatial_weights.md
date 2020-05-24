@@ -5,8 +5,8 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.4.2
+      format_version: '1.1'
+      jupytext_version: 1.2.1
   kernelspec:
     display_name: Python 3
     language: python
@@ -34,12 +34,22 @@ In what follows, we first consider different approaches to construct spatial wei
 
 from pysal.lib import weights
 from pysal.lib import cg as geometry
+import pysal
 import geopandas
 import seaborn
 import pandas 
 import numpy
+import matplotlib
 import matplotlib.pyplot as plt
+import shapely
 from shapely.geometry import Polygon
+
+print("pysal", pysal.__version__)
+print("seaborn", seaborn.__version__)
+print("numpy", numpy.__version__)
+print("matplotlib",  matplotlib.__version__)
+print("shapely", shapely.__version__)
+
 ```
 
 ## Contiguity Weights
@@ -1167,3 +1177,7 @@ Griffith, D. A. 1996. “Some Guidelines for Specifying the Geographic Weights M
 ---
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
+```python
+print("done")
+```

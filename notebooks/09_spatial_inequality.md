@@ -6,8 +6,8 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.4.2
+      format_version: '1.1'
+      jupytext_version: 1.2.1
   kernelspec:
     display_name: Python 3
     language: python
@@ -69,7 +69,13 @@ import numpy
 import mapclassify
 import matplotlib.pyplot as plt
 from pylab import rcParams
+import pylab
 rcParams['figure.figsize'] = 10, 5
+
+import sys
+print(sys.version)
+print("mapclassify",mapclassify.__version__)
+
 ```
 
 ```python ein.hycell=false ein.tags="worksheet-0" jupyter={"outputs_hidden": false} slideshow={"slide_type": "-"}
@@ -937,7 +943,7 @@ A final analytic that we use to examine the spatial distribution of inequality a
 The rank path traces out the migration of a particular rank in the county income distribution over time [3]. To construct the rank paths for the 20:20 counties, we first plot the centroids:
 <!-- #endregion -->
 
-```python ein.tags="worksheet-0" slideshow={"slide_type": "-"} jupyter={"outputs_hidden": false}
+```python ein.tags="worksheet-0" jupyter={"outputs_hidden": false} slideshow={"slide_type": "-"}
 idxs = numpy.array(list(zip(idx_20, idx_80)))
 ```
 

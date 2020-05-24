@@ -5,8 +5,8 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.4.2
+      format_version: '1.1'
+      jupytext_version: 1.2.1
   kernelspec:
     display_name: Python 3
     language: python
@@ -51,6 +51,10 @@ from pysal.lib import weights
 from numpy.random import seed
 # Bespoke
 from booktools import choropleth
+import booktools
+
+print("contextily ",contextily.__version__)
+# print("booktools ",booktools.__version__)
 ```
 
 In 2016, Great Britain ran a referendum to decide whether to remain in the European Union or to leave the club, the so called "Brexit" vote. We will use the official data from the Electoral Comission at the local authority level on percentage of votes for the Remain and Leave campains. There are two distinct datasets we will combine:

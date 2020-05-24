@@ -5,8 +5,8 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.2'
-      jupytext_version: 1.4.2
+      format_version: '1.1'
+      jupytext_version: 1.2.1
   kernelspec:
     display_name: Python 3
     language: python
@@ -69,6 +69,8 @@ import pysal
 import numpy
 import mapclassify
 import matplotlib.pyplot as plt
+
+
 ```
 
 ## Quantitative data classification 
@@ -562,7 +564,8 @@ Note that the default for the legend is two report two decimal places. If we des
 
 ```python
 f, ax = plt.subplots(1, figsize=(9, 9))
-mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles', fmt='{:.0f}')
+# mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles', fmt='{:.0f}')
+mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles')
 ax.set_axis_off()
 ax.set_title('PCGDP1940')
 plt.axis('equal')
@@ -596,7 +599,9 @@ which now uses a single-hue sequent,ial color map with the lighter shades repres
 
 ```python
 f, ax = plt.subplots(1, figsize=(9, 9))
-mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles', fmt='{:.0f}', \
+# mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles', fmt='{:.0f}', \
+#          cmap='Blues', edgecolor='k')
+mx.plot(ax=ax, column='PCGDP1940', legend=True, scheme='Quantiles', \
          cmap='Blues', edgecolor='k')
 ax.set_axis_off()
 ax.set_title('PCGDP1940')
@@ -735,3 +740,7 @@ Rey, S.J. and M.L. Guitierez. (2010)
 ---
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
+```python
+print("done")
+```
